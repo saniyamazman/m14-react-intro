@@ -7,9 +7,9 @@ var InputComponent = React.createClass({
     },
     update:function(event) {
         var value = event.target.value;
-        this.setState({text:value});
+        this.setState({text:value}); //text:value points to
     },
-    render:function() {
+    render:function() { //this line render:function
         return (
             <div>
                 <input onChange={this.update} />
